@@ -6,7 +6,7 @@ They operate physical stores in Barcelona, Amsterdam, Tokyo, and Austin. Each st
 
 Scarcity is intentional. Arcadia Editions does not restock. When a limited edition sells out, it is gone.
 
-**Arcadia Editions is not a real company.** It was created as a showcase for the [ZenWave Platform](https://zenwave360.io) — a set of tools for designing, generating, and governing event-driven architectures using AsyncAPI, Kafka, and Spring Boot.
+**Arcadia Editions is not a real company.** It was created as a showcase for the [ZenWave Platform](https://zenwave360.io), a set of tools for designing, generating, and governing event-driven architectures using AsyncAPI, Kafka, and Spring Boot.
 
 ---
 
@@ -14,9 +14,9 @@ Scarcity is intentional. Arcadia Editions does not restock. When a limited editi
 
 This organization contains the full backend architecture of Arcadia Editions, modeled domain-first using the ZenWave Platform toolchain.
 
-- **[arcadia-editions-docs](https://github.com/arcadia-editions/arcadia-editions-docs)** — Event Storming findings, ZFL flows, architecture diagrams. Start here.
-- **`{domain}-{service}-api`** — AsyncAPI and OpenAPI specs with ZDL domain models. The source of truth for every service contract.
-- **`{domain}-{service}-service`** — Spring Boot microservices generated and extended from the API specs.
+- **[arcadia-editions-docs](https://github.com/arcadia-editions/arcadia-editions-docs)**: Event Storming findings, ZFL flows, architecture diagrams. Start here.
+- **`{domain}-{service}-api`**: AsyncAPI and OpenAPI specs with ZDL domain models. The source of truth for every service contract.
+- **`{domain}-{service}-service`**: Spring Boot microservices generated and extended from the API specs.
 
 ---
 
@@ -37,18 +37,19 @@ Six bounded contexts, discovered through Event Storming and modeled in ZDL:
 
 ## Why this domain
 
-Scarcity plus global demand plus omnichannel operations cannot be handled well with synchronous REST APIs. Every product drop, every waitlist update, every sold-out notification is an event. The business demands event-driven architecture. That makes Arcadia Editions a realistic and honest showcase for what the ZenWave Platform does.
+Scarcity plus global demand plus omnichannel operations. Every product drop, every waitlist update, every sold-out notification is an event. The business demands event-driven architecture. That makes Arcadia Editions a realistic and honest showcase for what the ZenWave Platform does.
 
 ---
 
 ## The ZenWave Platform
 
-ZenWave is an open-source platform for event-driven architecture governance and code generation.
+ZenWave is an open-source platform for designing, developing and governing event-driven architectures.
 
-- **ZDL** — domain modeling language for bounded contexts and aggregates
-- **ZFL** — flow modeling language for capturing Event Storming findings
-- **ZenWave SDK** — generates AsyncAPI specs, Spring Boot producers and consumers, and more
-- **EventCatalog generator** — publishes the full event landscape for visibility
+- **ZDL**: domain modeling language for bounded contexts, aggregates, services and domain events
+- **ZFL**: flow modeling language for capturing Event Storming findings
+- **ZenWave SDK**: CLI toolkit that generates multiple software artifacts from domain models and APIs, including complete Spring Boot applications
+- **ZenWave API-Ops**: AsyncAPI to Terraform generator for keeping your APIs and infrastructure in sync
+- **EventCatalog generator**: publishes the full event landscape for visibility
 
 Learn more at [zenwave360.io](https://zenwave360.io) and [github.com/ZenWave360](https://github.com/ZenWave360).
 
@@ -58,4 +59,4 @@ Learn more at [zenwave360.io](https://zenwave360.io) and [github.com/ZenWave360]
 
 The architecture of Arcadia Editions is documented as a series of blog posts at [ivangsa.com](https://ivangsa.com). Technical deep-dives live at [zenwave360.io](https://zenwave360.io).
 
-*Built by [Iván García Sainz-Aja](https://github.com/ivangsa) — ZenWave founder, AsyncAPI Ambassador.*
+*Built by [Iván García Sainz-Aja]([https://github.com/ivangsa](https://www.linkedin.com/in/ivangarciasainzaja/)) - ZenWave founder, AsyncAPI Ambassador and TSC member.*
