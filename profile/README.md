@@ -58,4 +58,4 @@ Learn more at [zenwave360.io](https://zenwave360.io) and [github.com/ZenWave360]
 
 The architecture of Arcadia Editions is documented as a series of blog posts at [ivangsa.com](https://ivangsa.com). Technical deep-dives live at [zenwave360.io](https://zenwave360.io).
 
-*Built by [Iván García Sainz-Aja](https://github.com/ivangsa) — AsyncAPI Ambassador, ZenWave founder.*
+*Built by [Iván García Sainz-Aja](https://github.com/ivangsa) — ZenWave founder, AsyncAPI Ambassador.*
