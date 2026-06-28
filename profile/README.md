@@ -14,9 +14,12 @@ Scarcity is intentional. Arcadia Editions does not restock. When a limited editi
 
 This organization contains the full backend architecture of Arcadia Editions, modeled domain-first using the ZenWave Platform toolchain.
 
-- **[arcadia-editions-docs](https://github.com/arcadia-editions/arcadia-editions-docs)**: Event Storming findings, ZFL flows, architecture diagrams. Start here.
-- **`{domain}-{service}-api`**: AsyncAPI and OpenAPI specs with ZDL domain models. The source of truth for every service contract.
-- **`{domain}-{service}-service`**: Spring Boot microservices generated and extended from the API specs.
+- **[arcadia-editions-architecture](https://github.com/arcadia-editions/arcadia-editions-architecture)**: The architecture world model — `zenwave-architecture.yml`, the master manifest indexing every domain, service and contract, plus cross-domain business flows (ZFL), architecture decision records, and the published Maven packages built from those artifacts. Start here.
+- **[api-product-workflows](https://github.com/arcadia-editions/api-product-workflows)**: The reusable GitHub Actions workflows every `*-api` repository calls into for CI validation, artifact releases, and Kafka/Schema Registry provisioning via Terraform — generated straight from each repo's AsyncAPI contracts.
+- **[api-contract-commons](https://github.com/arcadia-editions/api-contract-commons)**: Master YAML files for reusable OpenAPI and AsyncAPI sections, including environment servers, common headers, security schemes, protocol bindings, and message traits.
+- **[arcadia-event-catalog](https://github.com/arcadia-editions/arcadia-event-catalog)**: The generated EventCatalog site, built from the architecture manifest and published at [arcadia-editions.github.io/arcadia-event-catalog](https://arcadia-editions.github.io/arcadia-event-catalog/).
+- **`{domain}-{service}-api`**: AsyncAPI and OpenAPI specs with ZDL domain models. The source of truth for every service contract, built and released through `api-product-workflows`.
+- **`{domain}-{service}-service`** *(and similarly named repos)*: Spring Boot microservices generated and extended from the API specs.
 
 ---
 
@@ -49,7 +52,7 @@ ZenWave is an open-source platform for designing, developing and governing event
 - **ZFL**: flow modeling language for capturing Event Storming findings
 - **ZenWave SDK**: CLI toolkit that generates multiple software artifacts from domain models and APIs, including complete Spring Boot applications
 - **ZenWave API-Ops**: AsyncAPI to Terraform generator for keeping your APIs and infrastructure in sync
-- **EventCatalog generator**: publishes the full event landscape for visibility
+- **EventCatalog generator**: publishes the full event landscape for visibility — see it live at [arcadia-editions.github.io/arcadia-event-catalog](https://arcadia-editions.github.io/arcadia-event-catalog/)
 
 Learn more at [zenwave360.io](https://zenwave360.io) and [github.com/ZenWave360](https://github.com/ZenWave360).
 
