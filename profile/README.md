@@ -23,6 +23,7 @@ This organization contains the full backend architecture of Arcadia Editions, mo
   - [Run Kafka provisioning on your laptop](https://github.com/arcadia-editions/api-product-workflows/blob/main/docs/run-kafka-provisioning-locally.md): generate Terraform from the AsyncAPI contracts of `orders-checkout-api`, plan and apply topics, schemas and ACLs on Confluent Cloud from your own machine, then change a contract and see how the plan changes.
 - **[api-contract-commons](https://github.com/arcadia-editions/api-contract-commons)**: Master YAML files for reusable OpenAPI and AsyncAPI sections, including environment servers, common headers, security schemes, protocol bindings, and message traits.
 - **[arcadia-event-catalog](https://github.com/arcadia-editions/arcadia-event-catalog)**: The generated EventCatalog site, built from the architecture manifest and published at [arcadia-editions.github.io/arcadia-event-catalog](https://arcadia-editions.github.io/arcadia-event-catalog/).
+- **[arcadia-editions-slides](https://github.com/arcadia-editions/arcadia-editions-slides)**: Slidev decks of the talks about Arcadia Editions and the ZenWave Platform. See [Talks](#talks).
 - **`{domain}-{service}-api`**: AsyncAPI and OpenAPI specs with ZDL domain models. The source of truth for every service contract, built and released through `api-product-workflows`. See [The domain](#the-domain) for the full list.
 - **`{domain}-{service}-service`**: Spring Boot microservices generated and extended from the API specs. Planned, except for the [Spring Modulith implementation](#reference-implementation-spring-modulith).
 
@@ -101,6 +102,14 @@ Hands-on guides you can run from your own machine against the public repositorie
 | [Run Kafka provisioning on your laptop](https://github.com/arcadia-editions/api-product-workflows/blob/main/docs/run-kafka-provisioning-locally.md) | Generate Terraform from `orders-checkout-api`'s AsyncAPI contracts, plan and apply topics, schemas and ACLs on Confluent Cloud, then change the contract and read the plan. |
 | [Spring Modulith service in Java](https://github.com/arcadia-editions/arcadia-editions-modulith-service-java#readme) | A Java and Spring Boot modular monolith generated from a ZDL domain model, with OpenAPI and AsyncAPI code generated at build time, and the remaining behavior completed with the zenwave-sdd agent skills and GitHub Spec Kit. |
 | [Spring Modulith service in Kotlin](https://github.com/arcadia-editions/arcadia-editions-modulith-service-kotlin#readme) | The same service in Kotlin and Spring Boot, from the same domain model and APIs. |
+
+---
+
+## Talks
+
+| Talk | Event | Slides |
+|---|---|---|
+| Software Engineering in 2026: Spec-Driven Development with Domain-Driven Design as code | Coruña JUG, 19 November 2026 | [talks/jug-arcadia-zenwave](https://github.com/arcadia-editions/arcadia-editions-slides/tree/main/talks/jug-arcadia-zenwave) |
 
 ---
 
